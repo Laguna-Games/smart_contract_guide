@@ -10,7 +10,7 @@ contract TestCoin is ERC20 {
     constructor() ERC20("Test Coin", "TSC") {}
 
     function faucet(address to) external {
-        uint256 amount = 100;
+        uint256 amount = 100000000000000000000;
         _mint(to, amount);
         emit FaucetEvent(to, amount);
     }
